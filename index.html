@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Acesso LetsDash</title>
+    <style>
+        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #0d1117; color: white; }
+        .card { background: #161b22; padding: 30px; border-radius: 10px; border: 1px solid #30363d; text-align: center; }
+        input { padding: 10px; border-radius: 5px; border: 1px solid #30363d; background: #0d1117; color: white; margin-bottom: 10px; width: 100%; }
+        button { padding: 10px 20px; background: #238636; color: white; border: none; border-radius: 5px; cursor: pointer; width: 100%; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>LetsDash 🔒</h2>
+        <input type="password" id="pass" placeholder="Digite a senha">
+        <button onclick="logar()">Entrar</button>
+    </div>
+    <script>
+        function logar() {
+            const pw = document.getElementById('pass').value;
+            if (pw === 'SUA_SENHA_AQUI') { // <--- Troque pela sua senha
+                window.location.href = "dash.html"; // Nome do arquivo que você renomeou
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+    </script>
+</body>
+</html>
